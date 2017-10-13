@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.navbar-fixed-top{
+    z-index: 900 !important;
+}
+.col-button{
+    text-align: center;
+}
+.employee-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.employee-container > * {
+    width: 100%;
+  }
+.employee-form {
+    min-width: 150px;
+    max-width: 680px;
+    width: 100%;
+  }
+.empInput-full-width {
+    width: 100%;
+  }
+.mat-form-field {
+    min-height: 5.3em;
+}
+.navbar-inverse {
+  background-color: #2A3F54 !important;
+  
+}
+.sidebar {
+  background-color: #2A3F54 !important;
+}
+.sidebar ul li a{
+  color: #f1f1f1 !important;
+}
+.sidebar ul li a:hover{
+  color: #2A3F54 !important;
+}
+.nav-sidebar > .active > a:hover{
+  color:#fff !important;
+}
+.shadow {
+  -moz-box-shadow:    0 10px 14px  #b7b7b7;
+  -webkit-box-shadow: 0 10px 14px  #b7b7b7;
+  box-shadow:         0 10px 14px  #b7b7b7;
+}     
+.main{
+  margin-top: 28px;
+}
+
