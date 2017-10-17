@@ -42,8 +42,8 @@
         </mat-form-field>
         </form>
       </div>
-      <button type="submit" class="btn btn-success" (click)="saveEmployee();success()" [disabled]="disableSaveBtn"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
-      <button type="submit" class="btn btn-warning" (click)="cancel()"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
+      <button type="submit" class="btn btn-success" mat-raised-button (click)="saveEmployee();success()" [disabled]="disableSaveBtn"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save</button>
+      <button type="submit" class="btn btn-warning" mat-raised-button (click)="cancel()"><i class="fa fa-times" aria-hidden="true"></i> Cancel</button>
     </mat-card>
   </div>
 </div>

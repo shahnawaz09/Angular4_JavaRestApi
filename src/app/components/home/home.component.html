@@ -14,9 +14,6 @@
   <p-column field="actualWorkHour" header="Actual Work Hour" sortable="true" [filter]="true" filterPlaceholder="Search"></p-column>
   <p-column field="totalWorkHour" header="Total Work Hour" sortable="true" [filter]="true" filterPlaceholder="Search"></p-column>
   <p-column styleClass="col-button" header="Action">
-    <!-- <ng-template pTemplate="header">
-          <button type="button" pButton icon="fa-refresh"></button>
-      </ng-template> -->
     <ng-template let-item="rowData" pTemplate="body">
       <button type="button" pButton (click)="deleteEmployeeData(item)" icon="fa-remove" pTooltip="Delete Record" tooltipPosition="right"></button>
     </ng-template>

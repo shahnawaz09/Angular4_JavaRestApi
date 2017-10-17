@@ -15,8 +15,10 @@ import { ExportComponent } from './components/export/export.component';
 import {DataTableModule,SharedModule,GrowlModule,DialogModule,ConfirmDialogModule,ConfirmationService,TooltipModule} from 'primeng/primeng';
 import { AddEmployeeComponent } from './components/add-employee/add-employee.component';
 import { SaveEmployeeDataService } from './services/saveEmployeeData.service';
-import {MatCardModule,MatFormFieldModule,MatInputModule} from '@angular/material';
-
+import { ImagesService } from './services/images.service';
+import {MatCardModule,MatFormFieldModule,MatInputModule,MatButtonModule,MatProgressBarModule} from '@angular/material';
+import { ImageListComponent } from './components/image-list/image-list.component';
+import { MasonryModule } from 'angular2-masonry';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import {MatCardModule,MatFormFieldModule,MatInputModule} from '@angular/material
     TrainingsComponent,
     AnalyticsComponent,
     ExportComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    ImageListComponent
     
   ],
   imports: [
@@ -46,9 +49,12 @@ import {MatCardModule,MatFormFieldModule,MatInputModule} from '@angular/material
     TooltipModule,
     MatCardModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule,
+    MatProgressBarModule,
+    MasonryModule
   ],
-  providers: [ConfirmationService,SaveEmployeeDataService],
+  providers: [ConfirmationService,SaveEmployeeDataService,ImagesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
